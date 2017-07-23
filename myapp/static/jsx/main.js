@@ -1,19 +1,18 @@
 class SearchBarItem extends React.Component {
     render() {
         return (
-                    <div>
-                         <ul style={{listStyleType: "none"}}>
-                         { this.props.items.map((item) =>
-                                 <li className="col-xs-6 col-sm-4">
-                                    <p class="marketing-byline">{item.name}</p>
-                                          <a class="thumbnail" href={this.props.link} target="_blank">
-                                           <img src="/static/img/example-nb/ijulia-preview.png" width="200" height="200"/>
-                                          
-                                          </a>
-                                 </li>
-                                 )}
-                         </ul>
-                     </div>
+            <div>
+             <ul style={{listStyleType: "none"}}>
+             { this.props.items.map((item) =>
+                     <li className="col-xs-6 col-sm-4">
+                        <p class="marketing-byline">{item.name}</p>
+                          <a class="thumbnail" href={this.props.link} target="_blank">
+                               <img src="/static/img/example-nb/ijulia-preview.png" width="200" height="200"/>
+                          </a>
+                     </li>
+                   )}
+             </ul>
+            </div>
         ) 
     }
 }
